@@ -31,7 +31,7 @@ namespace ClientChat.User
             {
                 view.LoadNotMyChats(notmychats);
             }
-
+            this.view.ChangeLable(this.model.user.Username);
         }
 
         public void OnMyChatSelected()

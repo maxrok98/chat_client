@@ -20,6 +20,7 @@ namespace ClientChat.User
         Chat SelectedMyChat { get; }
         Chat SelectedNotMyChat { get; }
 
+        void ChangeLable(string name);
         void LoadMyChats(List<Chat> mychats);
         void LoadNotMyChats(List<Chat> notmychats);
         void OpenChat(Chat chat);

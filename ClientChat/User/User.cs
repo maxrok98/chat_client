@@ -31,10 +31,13 @@ namespace ClientChat.User
 
             this.listBox1.SelectedIndexChanged += OnListBox1SelectedIndexChanged;
             this.listBox2.SelectedIndexChanged += OnListBox2SelectedIndexChanged;
-
+            
         }
 
-        
+        public void ChangeLable(string name)
+        {
+            this.label3.Text = name + ", you are welcom!";
+        }
 
         public List<Chat> MyChats
         {
@@ -116,6 +119,11 @@ namespace ClientChat.User
             {
                 CreateNewChat();
             }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
